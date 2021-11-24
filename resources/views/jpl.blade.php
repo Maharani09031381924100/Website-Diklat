@@ -1,8 +1,11 @@
 @extends('layout/main')
+
 @section('title', 'JPL')
-<main>
+
+@section('container')
+    <main>
         <ul class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh; position: fixed; align: left;">
+            <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 100vh; position: fixed; align: left; background-color: #81C784;">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <span class="fs-4">SELAMAT DATANG</span>
                 </a>       
@@ -19,7 +22,7 @@
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a href="/jpl" class="nav-link link active" aria-current="page">
+                        <a href="/jpl" class="nav-link link active" aria-current="page" style="background-color:#C5E1A5;">
                             JPL
                         </a>
                         </li>
@@ -42,12 +45,12 @@
                 <hr>
             </div>
         </ul>
-</main>
+    </main>
     
-    @section('container')
+    
     <div class="container" style= "margin: 0 auto; text-align: center;">
       <h1>Isi Sementara JPL</h1>
     </div>
-    @endsection
+@endsection
     
     

@@ -16,6 +16,11 @@
         margin: 0;
         padding: 0;
         }
+        
+        .background{
+          background-color: #C8E6C9;
+        }
+
         .toggle-sidebar {
         border: none;
         background-color: #3097af;
@@ -28,6 +33,7 @@
         cursor: pointer;
         transition:0.5s
         }
+
         .sidebar {
         
         position: fixed;
@@ -35,28 +41,54 @@
         top: 60px;
         transition: 0.5s;
         }
+
         .sidebar-open {
-        left: -30px;
+        left: -35px;
         }
 
-        .content {
-        
+        .content { 
         position: fixed;
         left: 40px;
         transition: 0.5s;
         }
+
         .content-open {
         left: 330px;
         }
         
+        .navbar-toggler{
+          padding: 0px 0px 10px;
+          width: 45px; 
+          height: 30px;
+          background-color: #4CAF50;
+
+    
+        }
+
+        
+        
   </style>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <body class="background">
+    <nav class="navbar navbar-dark" style="background-color: #4CAF50; height: 60px;">
+    <div class="container">
+ 
+      <div class="col-0">
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-toggler-icon"></i>
         </button>
       </div>
+        
+      <div class="col-10">
+        <p style="font-size: 12px; text-align: right; margin: 5px 0px;"><b>Rumah Sakit <br>Ernaldi Bahar Palembang</b></p>
+      </div>
+      <div class="col-0">
+      <img class="image" src="img/logo.png" width="50px" style="align: right;" >
+      </div>
+        
+  </div>     
+
     </nav>
     <ul class="content">
 
