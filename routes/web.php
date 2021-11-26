@@ -14,9 +14,9 @@
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/iht', function () {
-    return view('iht');
-});
+
+Route::get('/iht', 'IhtController@index');
+
 Route::get('/jpl', function () {
     return view('jpl');
 });
